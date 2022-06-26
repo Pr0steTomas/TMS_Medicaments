@@ -26,11 +26,6 @@ AddEventHandler('fprp_endiaron:endiaron', function(source)
 			rotation = Config.Rotation,
 		},
 	}, function(cancelled)
-		if not cancelled then
-			
-		else
-			
-		end
 	end)
 
 	local playerPed = PlayerPedId()
@@ -68,11 +63,6 @@ AddEventHandler('fprp_diazepam:diazepam', function(source)
 			rotation = Config.Rotation,
 		},
 	}, function(cancelled)
-		if not cancelled then
-			
-		else
-			
-		end
 	end)
 
 	local playerPed = PlayerPedId()
@@ -110,12 +100,7 @@ AddEventHandler('fprp_xanax:xanax', function(source)
 			rotation = Config.Rotation,
 		},
 	}, function(cancelled)
-		if not cancelled then
-			
-		else
-			
-		end
-	end)
+	end))
 
 	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
@@ -152,11 +137,6 @@ AddEventHandler('fprp_paralen:paralen', function(source)
 			rotation = Config.Rotation,
 		},
 	}, function(cancelled)
-		if not cancelled then
-			
-		else
-			
-		end
 	end)
 
 	local playerPed = PlayerPedId()
@@ -194,11 +174,6 @@ AddEventHandler('fprp_ibalgin:ibalgin', function(source)
 			rotation = Config.Rotation,
 		},
 	}, function(cancelled)
-		if not cancelled then
-			
-		else
-			
-		end
 	end)
 
 	local playerPed = PlayerPedId()
@@ -236,11 +211,6 @@ AddEventHandler('fprp_aspirin:aspirin', function(source)
 			rotation = Config.Rotation,
 		},
 	}, function(cancelled)
-		if not cancelled then
-			
-		else
-			
-		end
 	end)
 
 	local playerPed = PlayerPedId()
@@ -278,15 +248,10 @@ AddEventHandler('fprp_poison:poison', function(source)
 			rotation = Config.Rotation,
 		},
 	}, function(cancelled)
-		if not cancelled then
-			
-		else
-			
-		end
 	end)
+	
 	Wait(Config.PoisonDeathTime)
 
 	local playerPed = PlayerPedId()
-
 	SetEntityHealth(playerPed, 0)
 end)
