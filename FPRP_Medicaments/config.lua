@@ -18,12 +18,14 @@ Locales = {
 	['you_used_xanax']      = 'Snědl si xanax',
 	['you_used_diazepam']      = 'Snědl si diazepam',
 	['you_used_aspirin']      = 'Snědl si aspirin',
-	['you_used_poison']      = 'Snědl si záhadný prášek'
+	['you_used_poison']      = 'Snědl si záhadný prášek',
+	['you_feel_weird']       = 'Cítíš se nějak divně',
+	['poison_death']      = 'Mám pocit, že jsi snědl něco co nebylo moc ok a otrávil ses!'
 }
 
 -------------------------------- PROGRESS BAR --------------------------------
 Config.useWhileDead = false 							-- default : false
-Config.canCancel = false 								-- default : false
+Config.canCancel = true 								-- default : false
 Config.disableMovement = false 							-- default : false
 Config.disableCarMovement = true 						-- default : true
 Config.disableMouse = false 							-- default : false
@@ -35,10 +37,10 @@ Config.Anim = "pill"									-- degault : pill
 Config.Flags = 49										-- degault : 49
 
 -------------------------------- PROP --------------------------------
-Config.PropModel = "prop_cs_pills"						-- default : 49
+Config.PropModel = "prop_cs_pills"						-- degault : 49
 Config.PropBone = 57005									-- degault : 57005
-Config.PropCoords = { x = 0.13, y = 0.04, z = 0.0 }		-- default : { x = 0.13, y = 0.04, z = 0.0 }
-Config.Rotation = { x = -58.0, y = 0.0, z = 0.0 }		-- default : { x = -58.0, y = 0.0, z = 0.0 }
+Config.PropCoords = { x = 0.13, y = 0.04, z = 0.0 }		-- degault : { x = 0.13, y = 0.04, z = 0.0 }
+Config.Rotation = { x = -58.0, y = 0.0, z = 0.0 }		-- degault : { x = -58.0, y = 0.0, z = 0.0 }
 
 
 -----------------------------------------------------------------------------------------
@@ -94,6 +96,7 @@ Config.PoisonProgressBar = "Bereš si záhadný prášek"
 Config.ProgressBarDurationPoison = 2500
 Config.PoisonRemoveAfterUse = true
 Config.PoisonDeathTime = 120000 -- (2 minute) -- the time after which the player dies
+Config.PoisonNotify = 60000 -- (1 minute) -- the time after which the announcement that the player feels strange appears
 
 --  1000 ms = 1 sec     
 --  60 000 ms = 1 minute     
