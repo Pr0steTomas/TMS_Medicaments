@@ -35,10 +35,10 @@ Config.Anim = "pill"									-- degault : pill
 Config.Flags = 49										-- degault : 49
 
 -------------------------------- PROP --------------------------------
-Config.PropModel = "prop_cs_pills"						-- degault : 49
+Config.PropModel = "prop_cs_pills"						-- default : 49
 Config.PropBone = 57005									-- degault : 57005
-Config.PropCoords = { x = 0.13, y = 0.04, z = 0.0 }		-- degault : { x = 0.13, y = 0.04, z = 0.0 }
-Config.Rotation = { x = -58.0, y = 0.0, z = 0.0 }		-- degault : { x = -58.0, y = 0.0, z = 0.0 }
+Config.PropCoords = { x = 0.13, y = 0.04, z = 0.0 }		-- default : { x = 0.13, y = 0.04, z = 0.0 }
+Config.Rotation = { x = -58.0, y = 0.0, z = 0.0 }		-- default : { x = -58.0, y = 0.0, z = 0.0 }
 
 
 -----------------------------------------------------------------------------------------
