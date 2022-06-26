@@ -1,12 +1,10 @@
-local ESX = nil
-
 -- ENDIARON
 RegisterNetEvent('fprp_endiaron:endiaron')
 AddEventHandler('fprp_endiaron:endiaron', function(source)
 
 	exports['mythic_progbar']:Progress({
 		name = "fprp_endiaron",
-		duration = 2500,
+		duration = Config.ProgressBarDurationEndiaron,
 		label = Config.EndiaronProgressBar,
 		useWhileDead = Config.useWhileDead,
 		canCancel = Config.canCancel,
@@ -34,17 +32,12 @@ AddEventHandler('fprp_endiaron:endiaron', function(source)
 			
 		end
 	end)
-	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.EndiaronHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- DIAZEPAM
@@ -53,7 +46,7 @@ AddEventHandler('fprp_diazepam:diazepam', function(source)
 
 	exports['mythic_progbar']:Progress({
 		name = "fprp_diazepam",
-		duration = 2500,
+		duration = Config.ProgressBarDurationDiazepam,
 		label = Config.DiazepamProgressBar,
 		useWhileDead = Config.useWhileDead,
 		canCancel = Config.canCancel,
@@ -81,17 +74,12 @@ AddEventHandler('fprp_diazepam:diazepam', function(source)
 			
 		end
 	end)
-	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.DiazepamHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- XANAX
@@ -100,7 +88,7 @@ AddEventHandler('fprp_xanax:xanax', function(source)
 
 	exports['mythic_progbar']:Progress({
 		name = "fprp_xanax",
-		duration = 2500,
+		duration = Config.ProgressBarDurationXanax,
 		label = Config.XanaxProgressBar,
 		useWhileDead = Config.useWhileDead,
 		canCancel = Config.canCancel,
@@ -128,17 +116,12 @@ AddEventHandler('fprp_xanax:xanax', function(source)
 			
 		end
 	end)
-	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.XanaxHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- PARALEN
@@ -147,7 +130,7 @@ AddEventHandler('fprp_paralen:paralen', function(source)
 
 	exports['mythic_progbar']:Progress({
 		name = "fprp_paralen",
-		duration = 2500,
+		duration = Config.ProgressBarDurationParalen,
 		label = Config.ParalenProgressBar,
 		useWhileDead = Config.useWhileDead,
 		canCancel = Config.canCancel,
@@ -175,17 +158,12 @@ AddEventHandler('fprp_paralen:paralen', function(source)
 			
 		end
 	end)
-	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.ParalenHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- IBALGIN
@@ -194,7 +172,7 @@ AddEventHandler('fprp_ibalgin:ibalgin', function(source)
 
 	exports['mythic_progbar']:Progress({
 		name = "fprp_ibalgin",
-		duration = 2500,
+		duration = Config.ProgressBarDurationIbalgin,
 		label = Config.IbalginProgressBar,
 		useWhileDead = Config.useWhileDead,
 		canCancel = Config.canCancel,
@@ -222,17 +200,12 @@ AddEventHandler('fprp_ibalgin:ibalgin', function(source)
 			
 		end
 	end)
-	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.IbalginHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- ASPIRIN
@@ -241,7 +214,7 @@ AddEventHandler('fprp_aspirin:aspirin', function(source)
 
 	exports['mythic_progbar']:Progress({
 		name = "fprp_aspirin",
-		duration = 2500,
+		duration = Confgi.ProgressBarDurationAspirin,
 		label = Config.AspirinProgressBar,
 		useWhileDead = Config.useWhileDead,
 		canCancel = Config.canCancel,
@@ -269,17 +242,12 @@ AddEventHandler('fprp_aspirin:aspirin', function(source)
 			
 		end
 	end)
-	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.AspirinHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- POISON
@@ -288,7 +256,7 @@ AddEventHandler('fprp_poison:poison', function(source)
 
 	exports['mythic_progbar']:Progress({
 		name = "fprp_poison",
-		duration = 2500,
+		duration = Config.ProgressBarDurationPoison,
 		label = Config.PoisonProgressBar,
 		useWhileDead = Config.useWhileDead,
 		canCancel = Config.canCancel,
@@ -318,11 +286,7 @@ AddEventHandler('fprp_poison:poison', function(source)
 	end)
 	Wait(Config.PoisonDeathTime)
 
-	local playerPed = GetPlayerPed(-1)
-	local health = GetEntityHealth(playerPed)
+	local playerPed = PlayerPedId()
 
-		if SetEntityHealth(playerPed, 0) then
-
-		else
-	end
+	SetEntityHealth(playerPed, 0)
 end)
