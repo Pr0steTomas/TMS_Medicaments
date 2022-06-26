@@ -1,5 +1,3 @@
-local ESX = nil
-
 -- ENDIARON
 RegisterNetEvent('fprp_endiaron:endiaron')
 AddEventHandler('fprp_endiaron:endiaron', function(source)
