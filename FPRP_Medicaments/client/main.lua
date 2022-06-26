@@ -1,5 +1,3 @@
-local ESX = nil
-
 -- ENDIARON
 RegisterNetEvent('fprp_endiaron:endiaron')
 AddEventHandler('fprp_endiaron:endiaron', function(source)
@@ -36,15 +34,11 @@ AddEventHandler('fprp_endiaron:endiaron', function(source)
 	end)
 	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.EndiaronHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- DIAZEPAM
@@ -83,15 +77,11 @@ AddEventHandler('fprp_diazepam:diazepam', function(source)
 	end)
 	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.DiazepamHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- XANAX
@@ -130,15 +120,11 @@ AddEventHandler('fprp_xanax:xanax', function(source)
 	end)
 	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.XanaxHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- PARALEN
@@ -177,15 +163,11 @@ AddEventHandler('fprp_paralen:paralen', function(source)
 	end)
 	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.ParalenHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- IBALGIN
@@ -224,15 +206,11 @@ AddEventHandler('fprp_ibalgin:ibalgin', function(source)
 	end)
 	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.IbalginHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- ASPIRIN
@@ -271,15 +249,11 @@ AddEventHandler('fprp_aspirin:aspirin', function(source)
 	end)
 	Wait(2500)
 
-	local playerPed = GetPlayerPed(-1)
+	local playerPed = PlayerPedId()
 	local health = GetEntityHealth(playerPed)
-	local maxHealth = GetEntityMaxHealth(playerPed)
 	local newHealth = math.floor(health + Config.AspirinHP)
 
-		if SetEntityHealth(playerPed, newHealth) then
-
-		else
-	end
+	SetEntityHealth(playerPed, newHealth)
 end)
 
 -- POISON
@@ -318,11 +292,7 @@ AddEventHandler('fprp_poison:poison', function(source)
 	end)
 	Wait(Config.PoisonDeathTime)
 
-	local playerPed = GetPlayerPed(-1)
-	local health = GetEntityHealth(playerPed)
+	local playerPed = PlayerPedId()
 
-		if SetEntityHealth(playerPed, 0) then
-
-		else
-	end
+	SetEntityHealth(playerPed, 0)
 end)
