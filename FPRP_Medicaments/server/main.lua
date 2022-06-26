@@ -69,6 +69,10 @@ ESX.RegisterUsableItem(Config.PoisonItem, function(source)
 	if Config.PoisonRemoveAfterUse then
 		xPlayer.removeInventoryItem(Config.PoisonItem, 1)
 		TriggerClientEvent('fprp_medicalpills:notify', source, Locales['you_used_poison'])
+		Wait(Config.PoisonNotify)
+		TriggerClientEvent('fprp_medicalpills:notify', source, Locales['you_feel_weird'])
+		Wait(Config.PoisonNotify)
+		TriggerClientEvent('fprp_medicalpills:notify', source, Locales['poison_death'])
 	end
 end)
 
