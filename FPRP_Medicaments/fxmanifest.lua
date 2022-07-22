@@ -1,6 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
-Author 'Created by: [...𝓣𝓸𝓶𝓪𝓼]#7113'
+
+author '[...𝓣𝓸𝓶𝓪𝓼]#8420'
+description 'Medicament items'
+version '1.0.0'
 
 dependencies {
     'es_extended',
